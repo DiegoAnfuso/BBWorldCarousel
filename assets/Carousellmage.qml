@@ -72,9 +72,6 @@ Container {
                 }
             }
             duration: animationDuration
-            onDurationChanged: {
-                console.log("Duracion " + duration)
-            }
         },
         TranslateTransition {
         	id: animation2
