@@ -16,10 +16,7 @@ Container {
     id: coImage
     onTranslationXChanged: {
         if(coImages.indexOf(coImage) == 1 || coImages.indexOf(coImage) == 0){
-            var o = translationX * 100 / (coImages.wSup * 100 / -2)
-            coFx.opacity =  o            
-            if(coImages.indexOf(coImage) == 0)
-            	console.log("Opacity " + coFx.opacity)
+            coFx.opacity =  translationX * 100 / (coImages.wSup * 100 / -2)        
         }
     }    
     ImageView {
